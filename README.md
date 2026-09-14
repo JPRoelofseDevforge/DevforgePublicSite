@@ -14,8 +14,13 @@ Run `node scripts/serve.mjs` from this directory, then open http://127.0.0.1:417
 - `dist/app.js`: mobile navigation, accessible industry tabs and reduced-motion-aware reveals.
 - `dist/assets/forge-hero.webp`: original generated hero artwork, compressed to 151 KiB.
 - `.openai/hosting.json`: Sites identity and static publishing configuration.
+- `dist/terms/`, `dist/privacy/`, `dist/refunds/`: detailed policy pages linked from every footer.
+- `scripts/policy-content.mjs` and `scripts/generate-policies.mjs`: policy content and static page generation.
+- `docs/legal-review.md`: verified legal references and information still required before policy adoption.
 
 No package installation or compilation is required. The `dist` directory is the complete deployable site. Fonts use Google Fonts with system fallbacks. No analytics, trackers, forms or backend services are installed. Contact links open the visitor’s email or phone app; they do not automatically send a message.
+
+Policy pages are review drafts pending confirmation of the legal entity, address, Information Officer and applicable commercial/operational details. They have print styles and mobile contents navigation. Regenerate them with `node scripts/generate-policies.mjs` after changing the policy content.
 
 ## Content provenance
 
